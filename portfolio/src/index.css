@@ -1,0 +1,54 @@
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --bg: #0c0c0c;
+  --surface: #1c1c1c;
+  --border: #2e2e2e;
+  --text: #f0ede8;
+  --muted: #888;
+  --accent: #e8c97e;
+  --radius: 10px;
+  --font: Georgia, serif;
+  --font-ui: system-ui, sans-serif;
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0c0c0c;
+    --surface: #1c1c1c;
+    --border: #2e2e2e;
+    --text: #f0ede8;
+    --muted: #888;
+    --accent: #e8c97e;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.nav-items{
+  display: flex;
+}
